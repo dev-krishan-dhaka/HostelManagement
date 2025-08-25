@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hostel Management App</title>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: 'AIzaSyAoO7I_6XFZgal_MoYMJRgPLeTBkpSg7rA',
+    appId: '1:263615483057:web:1c9aa8b0bb4a61501f2690',
+    messagingSenderId: '263615483057',
+    projectId: 'basic-6b33a',
+    authDomain: 'basic-6b33a.firebaseapp.com',
+    storageBucket: 'basic-6b33a.firebasestorage.app',
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+<body>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/flutter_service_worker.js');
+    });
+  }
+</script>
+</body>
+</html>
